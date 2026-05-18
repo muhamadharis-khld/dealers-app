@@ -17,7 +17,8 @@ const phoneNumber = document.querySelector("#phoneNumber");
 const offerPrice = document.querySelector("#offerPrice");
 const offerNotes = document.querySelector("#offerNotes");
 const sentPanel = document.querySelector("#sentPanel");
-const sentPayload = document.querySelector("#sentPayload");
+const sentTitle = document.querySelector("#sentTitle");
+const sentMessage = document.querySelector("#sentMessage");
 const submitOfferButton = document.querySelector("#submitOfferButton");
 
 function escapeHtml(value) {
@@ -220,11 +221,12 @@ offerForm.addEventListener("submit", (event) => {
     status: "Pending pricing review"
   };
 
-  sentPayload.textContent = JSON.stringify(pricingMessage, null, 2);
-  sentPanel.hidden = false;
-  cart.clear();
-  offerForm.reset();
-  render();
+  sentTitle.textContent = "Offer sent";
+sentMessage.textContent = "Your offer has been sent to the pricing team.";
+sentPanel.hidden = false;
+cart.clear();
+offerForm.reset();
+render();
 });
 
 async function init() {
