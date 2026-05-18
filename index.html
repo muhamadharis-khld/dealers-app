@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>iMotorbike Dealer App</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="catalogue-panel" aria-label="Bike catalogue">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Dealer App</p>
+            <h1>Bike Catalogue</h1>
+          </div>
+          <div class="brand-logo" aria-label="iMotorbike">
+            <span class="brand-i">i</span><span>Motorbike</span>
+          </div>
+        </header>
+
+        <div class="toolbar" aria-label="Inventory filters">
+          <label class="search-field">
+            <span>Search</span>
+            <input id="searchInput" type="search" placeholder="Brand, model, plate, shop">
+          </label>
+          <label class="select-field">
+            <span>Brand</span>
+            <select id="brandFilter"></select>
+          </label>
+          <label class="select-field">
+            <span>Certification</span>
+            <select id="certFilter"></select>
+          </label>
+        </div>
+
+        <div class="notice">
+          Offer pricing is only available for bulk orders. Single bike purchases use normal listed prices.
+        </div>
+
+        <div id="bikeGrid" class="bike-grid" aria-live="polite"></div>
+      </section>
+
+      <aside class="offer-panel" aria-label="Bulk offer">
+        <div class="offer-header">
+          <div>
+            <p class="eyebrow">Submit Your Offer</p>
+            <h2>Bulk offer</h2>
+          </div>
+          <button id="clearCartButton" class="icon-button" type="button" title="Clear selected bikes" aria-label="Clear selected bikes">x</button>
+        </div>
+
+        <div class="notice">
+          Review your selected bikes below, enter your bulk offer price, and submit. The pricing team will review and get back to you.
+        </div>
+
+        <div id="cartEmpty" class="empty-state">
+          Click bikes on the left to add them here.
+        </div>
+
+        <div id="cartList" class="cart-list"></div>
+
+        <dl class="summary">
+          <div>
+            <dt>Bikes selected</dt>
+            <dd id="summaryCount">0</dd>
+          </div>
+          <div>
+            <dt>Total list price</dt>
+            <dd id="summaryTotal">RM0</dd>
+          </div>
+        </dl>
+
+        <form id="offerForm" class="offer-form">
+          <label>
+            Dealer name
+            <input id="dealerName" placeholder="Example: John Tan" required>
+          </label>
+          <label>
+            Company name
+            <input id="companyName" placeholder="Example: ABC Motor Trading" required>
+          </label>
+          <label>
+            Phone number
+            <input id="phoneNumber" inputmode="tel" placeholder="Example: 0123456789" required>
+          </label>
+          <label>
+            Your bulk offer price (total for all bikes)
+            <input id="offerPrice" inputmode="numeric" placeholder="Bulk pricing available for 2+ bikes only" required disabled>
+          </label>
+          <label>
+            Notes to pricing team
+            <textarea id="offerNotes" rows="4" placeholder="Example: Dealer can take all selected units this week."></textarea>
+          </label>
+          <button id="submitOfferButton" class="primary-button" type="submit" disabled>Submit single bike request</button>
+        </form>
+
+        <div id="sentPanel" class="sent-panel" hidden>
+          <h3>Example message sent to pricing</h3>
+          <pre id="sentPayload"></pre>
+        </div>
+      </aside>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

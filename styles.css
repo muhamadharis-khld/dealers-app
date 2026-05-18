@@ -1,0 +1,453 @@
+:root {
+  color-scheme: light;
+  --ink: #080808;
+  --muted: #647181;
+  --line: #dbe3ec;
+  --panel: #ffffff;
+  --page: #e9eef3;
+  --soft: #f5f7fa;
+  --accent: #ff4b1f;
+  --accent-dark: #d93612;
+  --danger: #a13d45;
+  --shadow: 0 18px 50px rgba(27, 42, 57, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--page);
+  color: var(--ink);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+.app-shell {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 430px;
+  gap: 16px;
+  min-height: 100vh;
+  padding: 18px;
+}
+
+.catalogue-panel,
+.offer-panel {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
+.catalogue-panel {
+  padding: 24px;
+  overflow: hidden;
+}
+
+.offer-panel {
+  align-self: start;
+  position: sticky;
+  top: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-height: calc(100vh - 36px);
+  padding: 22px;
+  overflow: auto;
+}
+
+.topbar,
+.offer-header,
+.toolbar,
+.summary div,
+.cart-item {
+  display: flex;
+  align-items: center;
+}
+
+.topbar,
+.offer-header {
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.eyebrow {
+  margin: 0 0 6px;
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  margin-bottom: 0;
+  font-size: 34px;
+  line-height: 1.05;
+}
+
+h2 {
+  margin-bottom: 0;
+  font-size: 24px;
+}
+
+h3 {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.brand-logo {
+  display: inline-flex;
+  align-items: baseline;
+  color: #000;
+  font-size: 26px;
+  font-weight: 950;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.brand-i {
+  color: var(--accent);
+  margin-right: 1px;
+}
+
+.toolbar {
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.search-field,
+.select-field,
+.offer-form label {
+  display: grid;
+  gap: 7px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 850;
+}
+
+.search-field {
+  flex: 1 1 340px;
+}
+
+.select-field {
+  flex: 0 1 220px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  min-height: 44px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #fff;
+  color: var(--ink);
+  padding: 10px 12px;
+  outline: none;
+  font-weight: 750;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(255, 75, 31, 0.14);
+}
+
+input:disabled,
+textarea:disabled {
+  background: #f7f9fb;
+  color: #8390a0;
+}
+
+.notice {
+  margin-bottom: 18px;
+  border-left: 4px solid var(--accent);
+  background: #fff1e8;
+  color: #4a2417;
+  padding: 12px 14px;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.bike-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 14px;
+}
+
+.bike-card {
+  display: grid;
+  gap: 12px;
+  min-height: 242px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  padding: 16px;
+}
+
+.bike-card.is-selected {
+  border-color: var(--accent);
+  box-shadow: inset 0 0 0 2px rgba(255, 75, 31, 0.16);
+}
+
+.bike-title {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.bike-title strong {
+  display: block;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.bike-title span {
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 750;
+}
+
+.plate {
+  align-self: start;
+  border-radius: 999px;
+  background: #202936;
+  color: #fff !important;
+  padding: 6px 10px;
+  font-size: 12px !important;
+  font-weight: 900 !important;
+  white-space: nowrap;
+}
+
+.bike-meta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9px 12px;
+  margin: 0;
+}
+
+.bike-meta div {
+  display: grid;
+  gap: 3px;
+}
+
+.bike-meta dt {
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.bike-meta dd {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.bike-link {
+  color: var(--accent);
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.bike-link:hover {
+  text-decoration: underline;
+}
+
+.price-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding-top: 10px;
+  border-top: 1px solid var(--line);
+}
+
+.price {
+  color: var(--accent);
+  font-size: 22px;
+  font-weight: 950;
+}
+
+.add-button,
+.primary-button,
+.icon-button {
+  min-height: 40px;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.add-button,
+.primary-button {
+  background: var(--accent);
+  color: #fff;
+  padding: 0 16px;
+}
+
+.add-button:hover,
+.primary-button:hover {
+  background: var(--accent-dark);
+}
+
+.add-button.is-selected {
+  background: var(--ink);
+}
+
+.icon-button {
+  width: 40px;
+  background: #fff1ee;
+  color: var(--danger);
+  font-size: 18px;
+}
+
+.cart-list {
+  display: grid;
+  gap: 8px;
+}
+
+.cart-item {
+  justify-content: space-between;
+  gap: 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.cart-item strong {
+  display: block;
+  font-size: 14px;
+}
+
+.cart-item span {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 750;
+}
+
+.cart-price {
+  color: var(--accent) !important;
+  font-weight: 950 !important;
+  white-space: nowrap;
+}
+
+.empty-state {
+  border: 1px dashed #b8c4cf;
+  border-radius: 8px;
+  background: var(--soft);
+  color: var(--muted);
+  padding: 18px;
+  text-align: center;
+  font-weight: 900;
+}
+
+.summary {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+}
+
+.summary div {
+  justify-content: space-between;
+  border-top: 1px solid var(--line);
+  padding-top: 10px;
+}
+
+.summary dt {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.summary dd {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 950;
+}
+
+.offer-form {
+  display: grid;
+  gap: 13px;
+}
+
+.primary-button {
+  width: 100%;
+}
+
+.primary-button:disabled {
+  background: #9aa6b2;
+  cursor: not-allowed;
+}
+
+.sent-panel {
+  border: 1px solid #ffd0bd;
+  border-radius: 8px;
+  background: #fff8f4;
+  color: #5a210f;
+  padding: 13px;
+}
+
+pre {
+  margin: 0;
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+@media (max-width: 980px) {
+  .app-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .offer-panel {
+    position: static;
+    max-height: none;
+  }
+}
+
+@media (max-width: 620px) {
+  .app-shell {
+    padding: 10px;
+  }
+
+  .catalogue-panel,
+  .offer-panel {
+    padding: 14px;
+  }
+
+  .topbar,
+  .offer-header,
+  .bike-title,
+  .price-row {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+}
