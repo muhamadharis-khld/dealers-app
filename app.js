@@ -194,39 +194,91 @@ clearCartButton.addEventListener("click", () => {
   render();
 });
 
-offerForm.addEventListener("submit", (event) => {
+offerForm.addEventListener("submit", async (event) => {
   event.preventDefault();
 
-  const selectedBikes = bikes.filter((bike) => cart.has(getBikeKey(bike)));
-  const listedTotal = selectedBikes.reduce((sum, bike) => sum + Number(bike.price || 0), 0);
-  const numericOffer = Number(String(offerPrice.value).replace(/[^\d.]/g, ""));
+  const selectedBikes = bikes.filter((bike) =>
+    cart.has(getBikeKey(bike))
+  );
 
-  const pricingMessage = {
-    destination: "Pricing Team",
-    dealer: {
-      submittedBy: dealerName.value.trim(),
-      company: companyName.value.trim(),
-      phone: phoneNumber.value.trim()
-    },
-    offerPrice: selectedBikes.length > 1 ? formatRinggit(numericOffer || 0) : "Single bike request",
-    listedTotal: formatRinggit(listedTotal),
+  const listedTotal = selectedBikes.reduce(
+    (sum, bike) => sum + Number(bike.price || 0),
+    0
+  );
+
+  const numericOffer = Number(
+    String(offerPrice.value).replace(/[^\d.]/g, "")
+  );
+
+  const payload = {
+    dealerName: dealerName.value.trim(),
+    companyName: companyName.value.trim(),
+    phoneNumber: phoneNumber.value.trim(),
+    offerPrice:
+      selectedBikes.length > 1
+        ? numericOffer || 0
+        : "Single bike request",
+
+    listedTotal,
+
     bikes: selectedBikes.map((bike) => ({
       plate: bike.plate,
       brand: bike.brand,
       model: bike.model,
-      dealerPrice: formatRinggit(bike.price),
-      link: getBikeLink(bike) || "No link"
+      price: bike.price
     })),
-    notes: offerNotes.value.trim() || "No notes",
-    status: "Pending pricing review"
+
+    notes: offerNotes.value.trim() || "No notes"
   };
 
-  sentTitle.textContent = "Offer sent";
-sentMessage.textContent = "Your offer has been sent to the pricing team.";
-sentPanel.hidden = false;
-cart.clear();
-offerForm.reset();
-render();
+  try {
+
+    submitOfferButton.disabled = true;
+    submitOfferButton.textContent = "Submitting...";
+
+    const response = await fetch("/api/submit-bike-request", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(payload)
+    });
+
+    const data = await response.json();
+
+    if (!data.success) {
+      throw new Error(data.error || "Submission failed");
+    }
+
+    sentTitle.textContent = "Offer sent";
+    sentMessage.textContent =
+      "Your request has been sent to the pricing team.";
+
+    sentPanel.hidden = false;
+
+    cart.clear();
+    offerForm.reset();
+    render();
+
+  } catch (error) {
+
+    console.error(error);
+
+    sentTitle.textContent = "Submission failed";
+    sentMessage.textContent =
+      "Unable to send request. Please try again.";
+
+    sentPanel.hidden = false;
+
+  } finally {
+
+    submitOfferButton.disabled = false;
+
+    submitOfferButton.textContent =
+      cart.size > 1
+        ? "Submit bulk offer"
+        : "Submit single bike request";
+  }
 });
 
 async function init() {
