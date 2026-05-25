@@ -453,8 +453,9 @@ pre {
 }
 
 .im-logo {
-  height: 42px;
+  height: 32px;
   width: auto;
+  max-width: 180px;
   object-fit: contain;
   display: block;
 }
