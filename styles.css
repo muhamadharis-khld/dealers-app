@@ -451,3 +451,10 @@ pre {
     font-size: 28px;
   }
 }
+
+.im-logo {
+  height: 42px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
