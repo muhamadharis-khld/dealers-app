@@ -15,7 +15,7 @@ module.exports = async (req, res) => {
       bikes
     } = req.body;
 
-    const webhookUrl = process.env.https://open.larksuite.com/open-apis/bot/v2/hook/d4b52831-e1df-400f-8e86-9eda31b76ad4;
+    const webhookUrl = process.env.LARK_WEBHOOK_URL;
 
     const bikeList = bikes
       .map(
