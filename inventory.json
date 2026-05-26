@@ -768,18 +768,6 @@
     "link": "https://imotorbike.com/my/en/motorbike/modenas-pulsar-rs200-24911/"
   },
   {
-    "productId": "93489",
-    "plate": "SMG 4322",
-    "brand": "Honda",
-    "model": "CBR150R",
-    "year": 2022,
-    "mileage": 28537,
-    "shop": "iMotorbike - Johor",
-    "price": 6550,
-    "certification": "Certified",
-    "link": "https://imotorbike.com/my/en/motorbike/honda-cbr150r-20982/"
-  },
-  {
     "productId": "93530",
     "plate": "DEK 5858",
     "brand": "Honda",
@@ -1224,18 +1212,6 @@
     "link": "https://imotorbike.com/my/en/motorbike/kawasaki-ninja-250-25191/"
   },
   {
-    "productId": "94626",
-    "plate": "SD 9080 V",
-    "brand": "Kawasaki",
-    "model": "Versys 1000 SE",
-    "year": 2023,
-    "mileage": 6115,
-    "shop": "iMotorbike - Johor",
-    "price": 67650,
-    "certification": "Certified",
-    "link": "https://imotorbike.com/my/en/motorbike/kawasaki-versys-1000-se-22107/"
-  },
-  {
     "productId": "94695",
     "plate": "WVB 8927",
     "brand": "Kawasaki",
@@ -1320,18 +1296,6 @@
     "link": "https://imotorbike.com/my/en/motorbike/suzuki-gixxer-sf250-22461/"
   },
   {
-    "productId": "94788",
-    "plate": "KFV 9249",
-    "brand": "Suzuki",
-    "model": "AVENIS",
-    "year": 2024,
-    "mileage": 8732,
-    "shop": "iMotorbike - Penang",
-    "price": 4050,
-    "certification": "Certified",
-    "link": "https://imotorbike.com/my/en/motorbike/suzuki-avenis-22321/"
-  },
-  {
     "productId": "94795",
     "plate": "DEX 1687",
     "brand": "Honda",
@@ -1354,18 +1318,6 @@
     "price": 8250,
     "certification": "As Is",
     "link": "https://imotorbike.com/my/en/motorbike/kawasaki-versys-x-250-24253/"
-  },
-  {
-    "productId": "94880",
-    "plate": "PKP 7010",
-    "brand": "Yamaha",
-    "model": "FZ150i",
-    "year": 2012,
-    "mileage": 63468,
-    "shop": "iMotorbike - Penang",
-    "price": 1850,
-    "certification": "As Is",
-    "link": "https://imotorbike.com/my/en/motorbike/yamaha-fz150i-25647/"
   },
   {
     "productId": "94882",
@@ -1678,6 +1630,18 @@
     "price": 1950,
     "certification": "As Is",
     "link": "https://imotorbike.com/my/en/motorbike/sym-sport-rider-125i-24922/"
+  },
+  {
+    "productId": "95412",
+    "plate": "PMC 8955",
+    "brand": "Yamaha",
+    "model": "YZF-R25",
+    "year": 2015,
+    "mileage": 26060,
+    "shop": "iMotorbike - Penang",
+    "price": 5450,
+    "certification": "As Is",
+    "link": "https://imotorbike.com/my/en/motorbike/yamaha-yzf-r25-25740/"
   },
   {
     "productId": "95421",
@@ -2136,18 +2100,6 @@
     "link": "https://imotorbike.com/my/en/motorbike/sym-husky-23170/"
   },
   {
-    "productId": "96124",
-    "plate": "KFJ 3956",
-    "brand": "Honda",
-    "model": "RS-X",
-    "year": 2022,
-    "mileage": 34571,
-    "shop": "iMotorbike - Penang",
-    "price": 4150,
-    "certification": "Certified",
-    "link": "https://imotorbike.com/my/en/motorbike/honda-rs-x-24979/"
-  },
-  {
     "productId": "96136",
     "plate": "PNM 6090",
     "brand": "Benelli",
@@ -2460,6 +2412,18 @@
     "link": "https://imotorbike.com/my/en/motorbike/wmoto-sm125i-24174/"
   },
   {
+    "productId": "96767",
+    "plate": "AME 5405",
+    "brand": "Honda",
+    "model": "CBR150R",
+    "year": 2021,
+    "mileage": 73423,
+    "shop": "iMotorbike - Penang",
+    "price": 5950,
+    "certification": "Certified Lite",
+    "link": "https://imotorbike.com/my/en/motorbike/honda-cbr150r-24405/"
+  },
+  {
     "productId": "96843",
     "plate": "JVT 5870",
     "brand": "Yamaha",
@@ -2506,18 +2470,6 @@
     "price": 1350,
     "certification": "As Is",
     "link": "https://imotorbike.com/my/en/motorbike/yamaha-fz150i-25179/"
-  },
-  {
-    "productId": "96898",
-    "plate": "WWU 478",
-    "brand": "Kawasaki",
-    "model": "ER-6N",
-    "year": 2012,
-    "mileage": 50531,
-    "shop": "iMotorbike - Johor",
-    "price": 6050,
-    "certification": "As Is",
-    "link": "https://imotorbike.com/my/en/motorbike/kawasaki-er-6n-25089/"
   },
   {
     "productId": "96930",
@@ -2703,7 +2655,7 @@
     "productId": "97278",
     "plate": "SD 9373 X",
     "brand": "Suzuki",
-    "model": "V-Strom SX ",
+    "model": "V-Strom SX",
     "year": 2025,
     "mileage": 4037,
     "shop": "iMotorbike - Penang",
@@ -3408,18 +3360,6 @@
     "link": "https://imotorbike.com/my/en/motorbike/yamaha-yzf-r15m-24996/"
   },
   {
-    "productId": "98096",
-    "plate": "VGU 8396",
-    "brand": "Yamaha",
-    "model": "135LC",
-    "year": 2021,
-    "mileage": 95336,
-    "shop": "iMotorbike - Glenmarie",
-    "price": 3150,
-    "certification": "As Is",
-    "link": "https://imotorbike.com/my/en/motorbike/yamaha-135lc-24551/"
-  },
-  {
     "productId": "98100",
     "plate": "JED 2168",
     "brand": "Honda",
@@ -3852,18 +3792,6 @@
     "link": "https://imotorbike.com/my/en/motorbike/yamaha-mt-09-25392/"
   },
   {
-    "productId": "98347",
-    "plate": "VJP 3597",
-    "brand": "GPX",
-    "model": "GR200",
-    "year": 2022,
-    "mileage": 53106,
-    "shop": "iMotorbike - Glenmarie",
-    "price": 2850,
-    "certification": "As Is",
-    "link": "https://imotorbike.com/my/en/motorbike/gpx-gr200-24784/"
-  },
-  {
     "productId": "98358",
     "plate": "JVX 1698",
     "brand": "Yamaha",
@@ -3994,6 +3922,18 @@
     "price": 1550,
     "certification": "Certified Lite",
     "link": "https://imotorbike.com/my/en/motorbike/sym-t2-250-25231/"
+  },
+  {
+    "productId": "98419",
+    "plate": "CDK 5648",
+    "brand": "Kawasaki",
+    "model": "Vulcan 250",
+    "year": 2013,
+    "mileage": 15975,
+    "shop": "iMotorbike - Glenmarie",
+    "price": 6150,
+    "certification": "Certified Lite",
+    "link": "https://imotorbike.com/my/en/motorbike/kawasaki-vulcan-250-24812/"
   },
   {
     "productId": "98430",
@@ -4680,18 +4620,6 @@
     "link": "https://imotorbike.com/my/en/motorbike/ktns-ra2-25398/"
   },
   {
-    "productId": "98741",
-    "plate": "VKY 429",
-    "brand": "Vespa",
-    "model": "Vespa S 125",
-    "year": 2022,
-    "mileage": 12478,
-    "shop": "iMotorbike - Glenmarie",
-    "price": 8450,
-    "certification": "Certified",
-    "link": "https://imotorbike.com/my/en/motorbike/vespa-vespa-s-125-25266/"
-  },
-  {
     "productId": "98742",
     "plate": "VFU 5222",
     "brand": "Benelli",
@@ -4848,18 +4776,6 @@
     "link": "https://imotorbike.com/my/en/motorbike/honda-cbr250rr-25455/"
   },
   {
-    "productId": "98799",
-    "plate": "JUA 6197",
-    "brand": "Benelli",
-    "model": "VZ 125i",
-    "year": 2019,
-    "mileage": 14887,
-    "shop": "iMotorbike - Glenmarie",
-    "price": 2050,
-    "certification": "Certified Lite",
-    "link": "https://imotorbike.com/my/en/motorbike/benelli-vz-125i-25302/"
-  },
-  {
     "productId": "98802",
     "plate": "QRM 7009",
     "brand": "BMW",
@@ -4908,18 +4824,6 @@
     "link": "https://imotorbike.com/my/en/motorbike/cfmoto-papio-xo-25362/"
   },
   {
-    "productId": "98837",
-    "plate": "VEK 4663",
-    "brand": "Honda",
-    "model": "EX5",
-    "year": 2020,
-    "mileage": 22690,
-    "shop": "iMotorbike - Glenmarie",
-    "price": 3050,
-    "certification": "Certified Lite",
-    "link": "https://imotorbike.com/my/en/motorbike/honda-ex5-25547/"
-  },
-  {
     "productId": "98846",
     "plate": "VBN 2133",
     "brand": "SYM",
@@ -4932,6 +4836,18 @@
     "link": "https://imotorbike.com/my/en/motorbike/sym-bx110-25643/"
   },
   {
+    "productId": "98847",
+    "plate": "VBH 4744",
+    "brand": "Aprilia",
+    "model": "Shiver 750",
+    "year": 2017,
+    "mileage": 59799,
+    "shop": "iMotorbike - Glenmarie",
+    "price": 13550,
+    "certification": "Certified Lite",
+    "link": "https://imotorbike.com/my/en/motorbike/aprilia-shiver-750-25738/"
+  },
+  {
     "productId": "98850",
     "plate": "JWH 2954",
     "brand": "QJ Motor",
@@ -4942,18 +4858,6 @@
     "price": 6550,
     "certification": "As Is",
     "link": "https://imotorbike.com/my/en/motorbike/qj-motor-srk250rr-25612/"
-  },
-  {
-    "productId": "98851",
-    "plate": "KDM 9757",
-    "brand": "Modenas",
-    "model": "Dinamik 120",
-    "year": 2013,
-    "mileage": 0,
-    "shop": "iMotorbike - Penang",
-    "price": 1150,
-    "certification": "As Is",
-    "link": "https://imotorbike.com/my/en/motorbike/modenas-dinamik-120-25458/"
   },
   {
     "productId": "98854",
@@ -5002,18 +4906,6 @@
     "price": 1850,
     "certification": "As Is",
     "link": "https://imotorbike.com/my/en/motorbike/modenas-karisma-125-25450/"
-  },
-  {
-    "productId": "98864",
-    "plate": "VLH 740",
-    "brand": "QJ Motor",
-    "model": "SRV250",
-    "year": 2023,
-    "mileage": 9145,
-    "shop": "iMotorbike - Glenmarie",
-    "price": 9350,
-    "certification": "Certified",
-    "link": "https://imotorbike.com/my/en/motorbike/qj-motor-srv250-25334/"
   },
   {
     "productId": "98867",
@@ -5110,18 +5002,6 @@
     "price": 1950,
     "certification": "Certified Lite",
     "link": "https://imotorbike.com/my/en/motorbike/yamaha-nouvo-lc-25377/"
-  },
-  {
-    "productId": "98890",
-    "plate": "VFU 7995",
-    "brand": "Honda",
-    "model": "CBR250RR",
-    "year": 2020,
-    "mileage": 45557,
-    "shop": "iMotorbike - Glenmarie",
-    "price": 15550,
-    "certification": "Certified Lite",
-    "link": "https://imotorbike.com/my/en/motorbike/honda-cbr250rr-25414/"
   },
   {
     "productId": "98894",
@@ -5964,16 +5844,16 @@
     "link": "https://imotorbike.com/my/en/motorbike/sym-sport-rider-125i-25695/"
   },
   {
-    "productId": "99140",
-    "plate": "VPG 1979",
-    "brand": "Triumph",
-    "model": "Speed 400",
-    "year": 2025,
-    "mileage": 6483,
+    "productId": "99144",
+    "plate": "VKF 9573",
+    "brand": "Yamaha",
+    "model": "MT-15",
+    "year": 2022,
+    "mileage": 11543,
     "shop": "iMotorbike - Glenmarie",
-    "price": 18750,
-    "certification": "Certified",
-    "link": "https://imotorbike.com/my/en/motorbike/triumph-speed-400-25681/"
+    "price": 6150,
+    "certification": "Certified Lite",
+    "link": "https://imotorbike.com/my/en/motorbike/yamaha-mt-15-25691/"
   },
   {
     "productId": "99146",
@@ -6058,6 +5938,18 @@
     "price": 20550,
     "certification": "Certified",
     "link": "https://imotorbike.com/my/en/motorbike/triumph-speed-400-25623/"
+  },
+  {
+    "productId": "99160",
+    "plate": "PRE 7385",
+    "brand": "Brixton",
+    "model": "CROSSFIRE 150 XS",
+    "year": 2024,
+    "mileage": 1799,
+    "shop": "iMotorbike - Glenmarie",
+    "price": 4950,
+    "certification": "Certified",
+    "link": "https://imotorbike.com/my/en/motorbike/brixton-crossfire-150-xs-25718/"
   },
   {
     "productId": "99161",
@@ -6384,6 +6276,18 @@
     "link": "https://imotorbike.com/my/en/motorbike/kawasaki-z900-25704/"
   },
   {
+    "productId": "99261",
+    "plate": "VMF 5017",
+    "brand": "CFMOTO",
+    "model": "Papio XO",
+    "year": 2024,
+    "mileage": 3932,
+    "shop": "iMotorbike - Glenmarie",
+    "price": 4550,
+    "certification": "Certified",
+    "link": "https://imotorbike.com/my/en/motorbike/cfmoto-papio-xo-25739/"
+  },
+  {
     "productId": "99263",
     "plate": "MDS 7415",
     "brand": "Yamaha",
@@ -6442,18 +6346,6 @@
     "price": 10250,
     "certification": "Certified Lite",
     "link": "https://imotorbike.com/my/en/motorbike/honda-nss300-forza-25734/"
-  },
-  {
-    "productId": "99320",
-    "plate": "JVJ 7808",
-    "brand": "Honda",
-    "model": "Vario 150",
-    "year": 2022,
-    "mileage": 1404,
-    "shop": "iMotorbike - Glenmarie",
-    "price": 4950,
-    "certification": "Certified",
-    "link": "https://imotorbike.com/my/en/motorbike/honda-vario-150-25719/"
   },
   {
     "productId": "99350",
