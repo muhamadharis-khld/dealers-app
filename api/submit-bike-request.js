@@ -11,6 +11,7 @@ module.exports = async (req, res) => {
       companyName,
       phoneNumber,
       offerPrice,
+      listedTotal,
       notes,
       bikes
     } = req.body;
@@ -34,6 +35,7 @@ Dealer: ${dealerName}
 Company: ${companyName}
 Phone: ${phoneNumber}
 
+Total List Price: RM ${listedTotal}
 Offer Price: RM ${offerPrice}
 
 Selected Bikes:
